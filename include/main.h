@@ -10,4 +10,6 @@
 #include "hardware/spi.h"
 #include "pico/cyw43_arch.h"
 
+#include "lwipopts.h"
+
 #endif

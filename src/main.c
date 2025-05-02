@@ -1,4 +1,4 @@
-#include "../include/main.h"
+#include "main.h"
 
 void blink_led();
 
@@ -14,6 +14,7 @@ int main() {
 void blink_led(){
 
     stdio_init_all();
+    cyw43_arch_init();
 
     while (true) {
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
